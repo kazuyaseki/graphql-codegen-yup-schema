@@ -8,6 +8,20 @@ install using `yarn`:
 
     $ yarn add -D graphql-codegen-yup-schema
 
+## Prerequisite
+
+You need to specify the following directive definition in your GraphQL schema.
+
+```graphql
+directive @constraint(
+  minLength: Int
+  maxLength: Int
+  pattern: String
+  min: Int
+  max: Int
+) on INPUT_FIELD_DEFINITION | ARGUMENT_DEFINITION
+```
+
 ## What it does for you
 
 let's say you have a following mutation with `constraint` directive.
