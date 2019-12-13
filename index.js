@@ -76,7 +76,7 @@ module.exports = {
       })
       .join('');
 
-    return `import yup from 'yup';
+    return `import * as yup from 'yup'
     ${result}`;
   }
 };
