@@ -33,7 +33,7 @@ generates:
     - graphql-codegen-yup-schema
 ```
 
-it will generate a yup validation object
+it will generate a yup validation object💪
 
 ```ts
 import * as yup from 'yup';
